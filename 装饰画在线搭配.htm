@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://kx.sic.hk/zxdp/index.php?prew=0&hua_id=1&layout_id=5&id=3484 -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>装饰画在线搭配</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./装饰画在线搭配_files/mdui.min.css">
+    <link href="./装饰画在线搭配_files/mycss.css" rel="stylesheet" media="all">
+    <script src="./装饰画在线搭配_files/mdui.min.js"></script>
+</head>
+
+<body class="mdui-theme-accent-pink mdui-loaded">
+
+
+
+
+    <script type="text/javascript">
+        document.oncontextmenu = function (e) {
+            e.preventDefault();
+        };
+
+        var _itemArr = [{ "coverImg": "https:\/\/ky-img.sic.hk\/upfiles\/20200413\/5e9413bf317738795.jpg", "x": "0", "y": "0", "z": "0", "widthCoe": "5", "heightCoe": "5", "isYuan": 0, "borderYuan": "", "backYuan": "", "shadowYuan": "" }];
+
+        var config = {
+            // items:[
+            //     {
+            //         coverImg:'img/2.jpg',
+            //         x:4,
+            //         y:0,
+            //         z:0,
+            //         widthCoe:3,
+            //         heightCoe:5
+            //     },
+            //     {
+            //         coverImg:'img/1.jpg',
+            //         x:0,
+            //         y:0,
+            //         z:0,
+            //         widthCoe:3,
+            //         heightCoe:5
+            //     },
+            //     {
+            //         coverImg:'img/3.jpg',
+            //         x:-4,
+            //         y:0,
+            //         z:0,
+            //         widthCoe:3,
+            //         heightCoe:5
+            //     }
+            // ],
+            items: _itemArr,
+            //item中的位置等也在layout里面设置，图片就按上传前后顺序来自动分别对应循环
+            //这个就在layout中设置即可 后台需要有3个：1.布局设置，2.材质设置，3.在对应的item选择布局和材质，可以批量设置
+            group: {
+                x: 0,
+                y: 3,
+                z: 0,
+                scaleX: 1,
+                scaleY: 1,
+            },
+            light: 0.45,
+            //公用材质
+            texture: {
+                shadow: 'https://ky-img.sic.hk/zxdp/touying.png',//投影
+                spineTexture: 'https://ky-img.sic.hk/upfiles/20200415/5e967993bd9c56212.png',//竖向侧边纹理
+                backTexture: 'https://ky-img.sic.hk/upfiles/20200415/5e96799e075523616.jpg',//背后图片
+                pagesTexture: 'https://ky-img.sic.hk/upfiles/20200415/5e967993bd9c56212.png',//竖向侧边纹理
+                pagesTopBottomTexture: 'https://ky-img.sic.hk/upfiles/20200415/5e967998d51b7756.png',//横向侧边纹理
+                border: 'https://ky-img.sic.hk/upfiles/20200415/5e9679a33d8612289.png',//图片最前面的边框，增强现实感
+            }
+        };
+
+        console.log(config);
+    </script>
+
+
+    <!--<div class="mdui-spinner mdui-spinner-colorful"></div>-->
+
+    <div id="app" class="opt">
+        <h4 class="cur-title" style="display: none;">调整单幅</h4>
+        <h4 class="cur-title" style="display: none;">调整组</h4>
+        <div class="opt-m-btns"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense btn-show-hide"><span
+                    class="show-tip">隐藏</span><span class="hide-tip">显示</span></button> <button
+                class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense btn-reset">重置</button> <button
+                class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense btn-v-h">背景模式</button></div>
+        <div id="groupOpt" class="opt-holder">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    水平位置
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="groupX" min="-8" max="8" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    垂直位置
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="groupY" min="-8" max="8" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 31.25%;"></div>
+                        <div class="mdui-slider-fill" style="width: 68.75%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 68.75%;"><span>3</span></div>
+                    </label></div>
+            </div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    大小
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="scale" min="0.1" max="1.5" data-default-val="1">
+                        <div class="mdui-slider-track" style="width: 35.7143%;"></div>
+                        <div class="mdui-slider-fill" style="width: 64.2857%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 64.2857%;"><span>1</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    中心旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="rotateZ" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+            </div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    水平旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="rotateY" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    垂直旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="rotateX" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+            </div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    照片亮度
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.05" data-group="1"
+                            value="1" data-type="picBrightness" min="0" max="2" data-default-val="1">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>1</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    装饰画亮度
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="1"
+                            data-type="huaBrightness" min="-1" max="2" data-default-val="0.45">
+                        <div class="mdui-slider-track" style="width: 51.6667%;"></div>
+                        <div class="mdui-slider-fill" style="width: 48.3333%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 48.3333%;"><span>0.45</span></div>
+                    </label></div>
+            </div>
+        </div>
+        <div id="singleOpt" class="opt-holder" style="display: none;">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    装饰画大小
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="0"
+                            data-type="scale" min="0.1" max="1.5" data-default-val="1">
+                        <div class="mdui-slider-track" style="width: 35.7143%;"></div>
+                        <div class="mdui-slider-fill" style="width: 64.2857%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 64.2857%;"><span>1</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    中心旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="0"
+                            data-type="rotateZ" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+            </div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    水平旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="0"
+                            data-type="rotateY" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+                <div class="mdui-col-xs-6">
+                    垂直旋转
+                    <label class="mdui-slider mdui-slider-discrete"><input type="range" step="0.01" data-group="0"
+                            data-type="rotateX" min="-3" max="3" data-default-val="0">
+                        <div class="mdui-slider-track" style="width: 50%;"></div>
+                        <div class="mdui-slider-fill" style="width: 50%;"></div>
+                        <div class="mdui-slider-thumb" style="left: 50%;"><span>0</span></div>
+                    </label></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="opt-btns">
+        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent select-img-upload">拍照</button>
+        <input class="file-uploader" type="file" accept="image/*" style="display: none;" id="myFileInput">
+    </div>
+
+
+
+
+    <div id="myImg"
+        style="filter:brightness(1); background-image:url('https://ky-img.sic.hk/upfiles/20200415/5e969dd3011694324.jpg');"
+        data-default-val="https://ky-img.sic.hk/upfiles/20200415/5e969dd3011694324.jpg"></div>
+    <div class="user-save-img" id="saveImg">
+
+    </div>
+
+    <!--<script type="text/javascript" src="/s/js/vconsole.min.js"></script>-->
+
+    <script type="text/javascript" src="./装饰画在线搭配_files/jweixin-1.4.0.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/three.min.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/vue.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/OrbitControls.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/DragControls.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/html2canvas.min.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/Item.js"></script>
+    <script type="text/javascript" src="./装饰画在线搭配_files/main.js"></script>
+
+
+    <script type="text/javascript">
+        var myJson = { "appId": "wxe0eb69d72a379dc5", "timestamp": 1595917190, "nonceStr": "6Sdxr8Ef2de7Cxdv", "signature": "6901de34b431df03d08d27351113a37bde4591a7", "url": "http:\/\/kx.sic.hk\/zxdp\/index.php?prew=0&hua_id=1&layout_id=5&id=3484" };
+
+        wx.config({
+            debug: false,
+            appId: myJson.appId,
+            timestamp: myJson.timestamp,
+            nonceStr: myJson.nonceStr,
+            signature: myJson.signature,
+            jsApiList: [
+                'checkJsApi',
+                // 'onMenuShareTimeline',
+                // 'onMenuShareAppMessage',
+                // 'updateAppMessageShareData',
+                // 'updateTimelineShareData',
+                // 'onMenuShareQQ',
+                // 'onMenuShareWeibo',
+                // 'onMenuShareQZone',
+                // 'hideMenuItems',
+                // 'showMenuItems',
+                // 'hideAllNonBaseMenuItem',
+                // 'showAllNonBaseMenuItem',
+                // 'translateVoice',
+                // 'startRecord',
+                // 'stopRecord',
+                // 'onVoiceRecordEnd',
+                // 'playVoice',
+                // 'onVoicePlayEnd',
+                // 'pauseVoice',
+                // 'stopVoice',
+                // 'uploadVoice',
+                // 'downloadVoice',
+                'chooseImage',
+                'previewImage',
+                'uploadImage',
+                'downloadImage',
+                // 'getNetworkType',
+                // 'openLocation',
+                // 'getLocation',
+                // 'hideOptionMenu',
+                // 'showOptionMenu',
+                // 'closeWindow',
+                // 'scanQRCode',
+                // 'chooseWXPay',
+                // 'openProductSpecificView',
+                // 'addCard',
+                // 'chooseCard',
+                // 'openCard'
+            ]
+        });
+
+
+    </script>
+
+
+    <canvas width="1125" height="2436" id="myCvs" tabindex="0" style="width: 375px; height: 812px;"></canvas>
+    <!---->
+</body>
+
+</html>
